@@ -1,0 +1,12 @@
+# Ambiente virtual
+.venv/
+
+# Arquivo de credenciais do Firebase
+teste-db2a3-firebase-adminsdk-erxro-e9f7eafe5f.json
+
+# Arquivos Python compilados
+__pycache__/
+*.py[cod]
+
+# Logs
+*.log
