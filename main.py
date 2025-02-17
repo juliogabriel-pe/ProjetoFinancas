@@ -1,20 +1,22 @@
-from src.controller.readValue.readValue import readValue
+from src.controller.readValue.read_value import read_value
 from src.menu.menu import menu
-from src.menu.menu import menuRead
-from src.controller.addValue.addValue import addValue
+from src.menu.menu import menu_read
+from src.controller.addValue.add_value import add_value
 
 while (True) :
 
-    opcaoEscolhida  = menu()
+    opcao_escolhida  = menu()
 
-    if (opcaoEscolhida == 1) :
-        addValue()
+    if (opcao_escolhida == 1) :
+        add_value()
         break
-    if (opcaoEscolhida == 2) :
+    elif (opcao_escolhida == 2) :
         while (True) :
-            opcaoEscolhida = menuRead()
-            flag = readValue(opcaoEscolhida)
+            opcao_escolhida = menu_read()
+            flag = read_value(opcao_escolhida)
 
-            if opcaoEscolhida == 0 or  flag == 'n':
+            if opcao_escolhida == 0 or flag == 'n':
                 break
+    elif (opcao_escolhida == 0) :
+        print('Obrigado e Volte sempre!')
         break

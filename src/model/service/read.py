@@ -1,10 +1,10 @@
-from src.model.conexaoBanco.conexaoBanco import db
+from src.model.conexaoBanco.conexao_banco import DB
 
 lista = {}
 
-def readDoc() :
+def read_doc() :
 
-    colecao = db.collection('Compras')
+    colecao = DB.collection('Compras')
 
     try :
         lista = colecao.get()

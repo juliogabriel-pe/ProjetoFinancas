@@ -1,8 +1,8 @@
-from src.model.service.read import readDoc
+from src.model.service.read import read_doc
 
-lista = readDoc()
+lista = read_doc()
 
-def readValue(opcao):
+def read_value(opcao):
     valores_mensais = {
         'janeiro': 0,
         'fevereiro': 0,
